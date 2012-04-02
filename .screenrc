@@ -1,0 +1,62 @@
+# ~/.screenrc
+# C-t C-t switch
+# C-t r # resize mode
+# C-t x 2 split
+# C-t x o windowの移動
+# C-t A   名前をつける
+# C-t K   windowを消す
+
+# basics
+escape ^t^z
+defscrollback 1000
+shell -$SHELL
+autodetach on
+bind w windowlist -b
+altscreen on
+startup_message off
+vbell off
+
+# encode
+defutf8 on
+defkanji utf-8
+encoding utf-8 utf-8
+defencoding utf-8
+
+# hardstatus
+defhstatus ^En:^Et@^EH
+hardstatus on
+hardstatus string "%?%h%:%t%?"
+
+# caption
+caption always "%{=r dd}%`%-w%{+b WK}%n %t%{-}%+w %= [%02c]"
+sorendition "+rb .G"
+
+# for color term
+attrcolor b ".I"
+termcapinfo xterm*|screen* is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l
+defbce on
+term xterm-color
+termcapinfo xterm* ti@:te@
+
+# disable xoff
+bind s
+
+# notice when some event rised on hidden windows
+defmonitor on
+
+# make key bind like emacs on copy mode
+markkeys "h=^B:l=^F:^A=^A:$=^E"
+
+# key binds of window splitting/resize
+bind -c REGION 2 split
+bind -c REGION 1 only
+bind -c REGION 0 remove
+bind -c REGION o focus
+bind -c REGION \^ resize
+bind x command -c REGION
+
+# key binds of window resize mode
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize ^] command
+bind -c resize j eval 'resize +1' 'command -c resize'
+bind -c resize k eval 'resize -2' 'command -c resize'
