@@ -1,0 +1,11 @@
+[user]
+	name = m0r1
+	email = mrych1110+github@gmail.com
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+  di = diff
+  sub = submodule

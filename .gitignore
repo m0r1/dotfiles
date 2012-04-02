@@ -1,0 +1,10 @@
+*~
+*.elc
+.DS_Store
+.buildpath
+.project
+.settings
+TAGS
+.svn
+cache/*
+log/*
