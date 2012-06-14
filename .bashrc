@@ -16,5 +16,6 @@ alias snv="svn"
 
 export EDITOR=/usr/bin/emacs
 export SVN_EDITOR=/usr/bin/vi
+export GIT_EDITOR=/usr/bin/vi
 export PAGER=/usr/bin/less
 
