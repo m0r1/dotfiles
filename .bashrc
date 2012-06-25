@@ -1,4 +1,5 @@
 export PS1="\[\e[1;32m\][\u@\h:\W \$]\[\e[00m\] "
+export TERM="xterm-256color"
 
 export LANG="ja_JP.utf-8"
 export LC_ALL="ja_JP.utf-8"
@@ -18,4 +19,3 @@ export EDITOR=/usr/bin/emacs
 export SVN_EDITOR=/usr/bin/vi
 export GIT_EDITOR=/usr/bin/vi
 export PAGER=/usr/bin/less
-
