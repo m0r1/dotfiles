@@ -11,7 +11,7 @@ stty stop undef
 # スペースやタブで始まる行をヒストリに記録しない
 HISTCONTROL=ignorespace
 # よく使うコマンドは履歴保存対象から外す
-HISTIGNORE="fg*:bg*:history*:jobs*"
+HISTIGNORE="fg*:bg*:jobs*:history*:pwd*"
 
 alias ssh="ssh -A"
 alias emacs="emacs -nw"
