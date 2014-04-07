@@ -11,6 +11,7 @@ install wget
 install tree
 install nkf
 install ack
+install jq
 install emacs --japanese --srgb --with-gnutls
 install rbenv
 install ruby-build
