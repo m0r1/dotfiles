@@ -6,6 +6,7 @@ install git
 install git-flow
 install curl
 install curl-ca-bundle
+install openssl
 install gnutls
 install wget
 install tree
@@ -40,6 +41,7 @@ cask install the-unarchiver
 cask install freemind
 cask install libreoffice
 cask install skype
+cask install hipchat
 cask install flickr-uploadr
 
 # font
