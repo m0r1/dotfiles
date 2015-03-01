@@ -32,7 +32,6 @@ cask install bettertouchtool
 cask install caffeine
 cask install firefox
 cask install google-chrome
-cask install yorufukurou
 cask install virtualbox
 cask install vagrant
 cask install dropbox
@@ -42,6 +41,7 @@ cask install freemind
 cask install libreoffice
 cask install skype
 cask install hipchat
+cask install slack
 cask install flickr-uploadr
 
 # font
@@ -51,6 +51,8 @@ install ricty
 # others
 tap homebrew/binary
 install packer
+
+linkapps
 
 # for Alfred
 cask alfred link
